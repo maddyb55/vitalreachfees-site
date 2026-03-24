@@ -1193,7 +1193,7 @@
           </div>
           <div class="ci-text">
             <span class="ci-label">Email</span>
-            <span class="ci-value">info@vitalreachmobilefees.com</span>
+            <span class="ci-value">info@vitalreachfees.com</span>
           </div>
         </div>
         <div class="contact-item">
@@ -1224,45 +1224,47 @@
     </div>
     <div class="contact-form">
       <h3>Referral / Contact Form</h3>
-      <div class="form-row">
-        <div class="form-group">
-          <label for="f-fname">First Name</label>
-          <input type="text" id="f-fname" placeholder="Jane" />
+      <form action="https://formspree.io/f/xdawqqyb" method="POST">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="f-fname">First Name</label>
+            <input type="text" id="f-fname" name="first-name" placeholder="Jane" required />
+          </div>
+          <div class="form-group">
+            <label for="f-lname">Last Name</label>
+            <input type="text" id="f-lname" name="last-name" placeholder="Smith" required />
+          </div>
         </div>
         <div class="form-group">
-          <label for="f-lname">Last Name</label>
-          <input type="text" id="f-lname" placeholder="Smith" />
+          <label for="f-org">Facility / Organization</label>
+          <input type="text" id="f-org" name="organization" placeholder="Sunridge Skilled Nursing" />
         </div>
-      </div>
-      <div class="form-group">
-        <label for="f-org">Facility / Organization</label>
-        <input type="text" id="f-org" placeholder="Sunridge Skilled Nursing" />
-      </div>
-      <div class="form-row">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="f-phone">Phone</label>
+            <input type="tel" id="f-phone" name="phone" placeholder="(412) 555-0100" />
+          </div>
+          <div class="form-group">
+            <label for="f-email">Email</label>
+            <input type="email" id="f-email" name="email" placeholder="you@facility.com" required />
+          </div>
+        </div>
         <div class="form-group">
-          <label for="f-phone">Phone</label>
-          <input type="tel" id="f-phone" placeholder="(412) 555-0100" />
+          <label for="f-type">Inquiry Type</label>
+          <select id="f-type" name="inquiry-type">
+            <option value="">Select one...</option>
+            <option>Patient Referral</option>
+            <option>Facility Partnership</option>
+            <option>General Question</option>
+            <option>Insurance / Billing</option>
+          </select>
         </div>
         <div class="form-group">
-          <label for="f-email">Email</label>
-          <input type="email" id="f-email" placeholder="you@facility.com" />
+          <label for="f-msg">Message / Clinical Notes</label>
+          <textarea id="f-msg" name="message" placeholder="Brief description of the patient situation or your question..."></textarea>
         </div>
-      </div>
-      <div class="form-group">
-        <label for="f-type">Inquiry Type</label>
-        <select id="f-type">
-          <option value="">Select one...</option>
-          <option>Patient Referral</option>
-          <option>Facility Partnership</option>
-          <option>General Question</option>
-          <option>Insurance / Billing</option>
-        </select>
-      </div>
-      <div class="form-group">
-        <label for="f-msg">Message / Clinical Notes</label>
-        <textarea id="f-msg" placeholder="Brief description of the patient situation or your question..."></textarea>
-      </div>
-      <button class="btn btn-primary form-submit">Send Referral / Message</button>
+        <button type="submit" class="btn btn-primary form-submit">Send Referral / Message</button>
+      </form>
     </div>
   </div>
 </section>
